@@ -1,0 +1,219 @@
+/*costumfonts*/
+/*@font-face {
+    font-family: "NewTegomin";
+    src: url("fonts/NewTegomin-Regular.ttf") format(ttf);
+    font-weight: normal;
+    font-style: normal;
+}*/
+@import "mixins";
+$mainColor:#056356;
+html {
+    background-color: #234852;
+    line-height: 1.7;
+    color: #fff;
+}
+
+body {
+    font-family: 'New Tegomin';font-size: 87%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+   
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+
+}
+@import "header";
+ .content-area {
+    border-bottom: 3px dotted rgb(188, 202, 207);
+    background-color: #2b5966;
+}
+/*.disply{
+    display: flex;
+    .main-area {
+        flex: 3;
+    }
+    .sidebar {
+        flex: 1;
+    }
+    
+}*/
+
+.main-area {
+    background-color: #234852;
+    border: 5px solid #326574;
+    padding: 20px 40px 7px 40px;
+    border-bottom: none;
+    border-top: none;
+    
+    
+ .image {
+     overflow: hidden;
+     position: relative;
+     padding-right: 20px;
+     img {
+        display: block;
+        transition: all 2s;
+        padding: 20px;
+        max-width: 80%;
+        &:hover {
+            transform: scale(1.5);
+        }
+        @media screen and (max-width: 784px) { 
+            padding: 0;
+        }
+    }
+    
+     
+ }
+ .info-box {
+    background-color: #2b5966;
+    border: 5px solid #326574;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;}
+    
+.read-more {
+    text-decoration: underline;
+    color:  #69c9e6;
+    &:hover {
+        text-decoration: none;}
+}
+.toggle-btn {
+	font-size: 15px;
+}
+.toggle-btn-visible {
+    display: block;
+}
+
+.toggle-target-hidden {
+    display: none;
+}
+
+.toggle-target-expanded {
+    display: block;
+}
+
+
+}
+.toggle-btn{
+    display: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .toggle-btn-visible {
+        display: block;
+    }
+    
+    .toggle-target-hidden {
+        display: none;
+    }
+    
+    .toggle-target-expanded {
+        display: block;
+    }}
+
+@import "sidebar";
+ footer {
+     text-align: center;
+     font-size: 100%;
+     padding: 40px;
+ }
+ /* Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
+  
+  .col {
+    width: 100%;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .col-xs-11 {width: 91.662%}
+  .col-xs-10 {width: 83.332%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-8 {width: 66.662%;}
+  .col-xs-7 {width: 58.331%}
+  .col-xs-6 {width: 50%;}
+  .col-xs-5 {width: 41.662%}
+  .col-xs-4 {width: 33.332%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-2 {width: 16.662%;}
+  .col-xs-1 {width: 8.332%;}
+  
+  @media screen and (min-width: 768px) {
+    .row {
+      margin-right: -40px;
+    }
+  
+    .col {
+      padding-right: 40px;
+    }
+  
+    .col-sm-11 {width: 91.662%}
+      .col-sm-10 {width: 83.332%;}
+      .col-sm-9 {width: 75%;}
+      .col-sm-8 {width: 66.662%;}
+      .col-sm-7 {width: 58.331%}
+      .col-sm-6 {width: 50%;}
+      .col-sm-5 {width: 41.662%}
+      .col-sm-4 {width: 33.332%;}
+      .col-sm-3 {width: 25%;}
+      .col-sm-2 {width: 16.662%;}
+      .col-sm-1 {width: 8.332%;}
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .col-md-11 {width: 91.662%}
+      .col-md-10 {width: 83.332%;}
+      .col-md-9 {width: 75%;}
+      .col-md-8 {width: 66.662%;}
+      .col-md-7 {width: 58.331%}
+      .col-md-6 {width: 50%;}
+      .col-md-5 {width: 41.662%}
+      .col-md-4 {width: 33.332%;}
+      .col-md-3 {width: 25%;}
+      .col-md-2 {width: 16.662%;}
+      .col-md-1 {width: 8.332%;}
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .col-lg-11 {width: 91.662%}
+      .col-lg-10 {width: 83.332%;}
+      .col-lg-9 {width: 75%;}
+      .col-lg-8 {width: 66.662%;}
+      .col-lg-7 {width: 58.331%}
+      .col-lg-6 {width: 50%;}
+      .col-lg-5 {width: 41.662%}
+      .col-lg-4 {width: 33.332%;}
+      .col-lg-3 {width: 25%;}
+      .col-lg-2 {width: 16.662%;}
+      .col-lg-1 {width: 8.332%;}
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .push-down-sm {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .push-down-sm {
+      margin-bottom: 15px;
+    }
+  }
+  
+  

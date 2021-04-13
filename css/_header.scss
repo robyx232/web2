@@ -1,0 +1,86 @@
+@import "animation";
+header {
+    background-color: rgb(188, 202, 207);
+    padding-top: 20px;
+    h1 {
+        color: #000;
+        margin: 0;
+        font-size: 250%;
+        margin-bottom: -5px;
+    }
+    p {
+        display: block;
+        box-sizing: border-box;
+        border-radius: 10px;
+        max-width: 230px;
+        color: #fff;
+        margin: 0;
+        padding-left: 10px;
+        font-size: 120%;
+        background-color: #234852;
+        animation: fadeBounce 1s; 
+        -webkit-animation: fadeBounce 1s;
+        
+    }
+}
+.site-nav {
+    margin-top: 20px;
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        @media screen and (max-width: 784px) { 
+            flex-direction: column;
+            
+    }
+    li {
+        margin-right: 5px;
+        @media screen and (max-width: 784px) { 
+        animation: fadeBounce 2s forwards; 
+            -webkit-animation: fadeBounce 2s forwards;
+            &:nth-child(2) {
+                opacity: 0;
+                animation-delay: .5s;
+            }
+            &:nth-child(3) {
+                opacity: 0;
+                animation-delay: 1s;
+            }
+            &:nth-child(4) {
+                opacity: 0;
+                animation-delay: 1.5s;
+            }
+            &:nth-child(5) {
+                opacity: 0;
+                animation-delay: 2s;
+            }
+            &:nth-child(6) {
+                opacity: 0;
+                animation-delay: 2.5s;
+            }}
+            
+    }
+    a {
+        display: block;
+        color:#000;
+        padding: 10px 20px;
+        border:5px solid  #326574;
+        border-bottom: none;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        transition: all 1s;
+        &:hover {
+            background-color: #234852;
+            color: #fff;
+        }
+        @media screen and (max-width: 784px) { 
+            margin-bottom: 5px;
+            border-bottom: 5px solid  #326574;
+            background-color: #234852;
+            color: white;
+            
+        }
+
+    }
+   
+}}

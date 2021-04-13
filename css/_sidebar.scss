@@ -1,0 +1,64 @@
+@import "animation";
+.sidebar {
+    @media screen and (max-width: 784px) {
+        max-width: 80%;
+    }
+    
+    padding: 20px 40px;
+    font-size: 120%;
+    background-color: rgb(188, 202, 207);
+    p { 
+        
+        word-spacing: 3px;
+        border-top: 3px dotted black;
+        color: black;
+        font-weight: strong;
+    }
+    margin-bottom: 50%;
+    margin-right: -25%;
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        opacity: 0;
+        animation: fadeBounce 2s forwards; 
+        -webkit-animation: fadeBounce 2s forwards;
+        margin-right: 5px;
+        box-shadow: 2px 5px 5px black;
+        border:5px solid #234852;
+        transition: all .5s;
+        &:hover {
+            margin-bottom: 10%;
+            box-shadow: 5px 10px 5px black;
+        }
+        border-radius: 5px;
+     
+        margin-bottom: 15px;
+        &:nth-child(2) {
+            opacity: 0;
+            animation-delay: .5s;
+        }
+        &:nth-child(3) {
+            opacity: 0;
+            animation-delay: 1s;
+        }
+        &:nth-child(4) {
+            opacity: 0;
+            animation-delay: 1.5s;
+        }
+        
+    }
+    a {
+  display: flex;
+        color:#fff;
+        padding: 10px 20px;
+        background-color: #234852;
+        transition: all 1s;
+      
+    }
+
+
+}
